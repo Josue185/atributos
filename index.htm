@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple RPG Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginScreen" class="screen">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username" id="loginUsername">
+    <input type="password" placeholder="Password" id="loginPassword">
+    <button onclick="showGameScreen()">Login</button>
+    <p onclick="showRegisterScreen()">Não tem uma conta? Cadastre-se</p>
+</div>
+
+<div id="registerScreen" class="screen" style="display: none;">
+    <h2>Cadastro</h2>
+    <input type="text" placeholder="Username" id="registerUsername">
+    <input type="email" placeholder="Email" id="registerEmail">
+    <input type="password" placeholder="Password" id="registerPassword">
+    <button onclick="showLoginScreen()">Cadastrar</button>
+</div>
+
+<div id="gameScreen" class="screen" style="display: none;">
+    <div id="rpgScreen">
+        <h2>Avatar RPG</h2>
+        <p>Atribua seus pontos:</p>
+        <div id="abilities">
+            <div>Força: <button onclick="addPoint('forca')">+</button> <span id="forca">0</span></div>
+            <div>Agilidade: <button onclick="addPoint('agilidade')">+</button> <span id="agilidade">0</span></div>
+            <div>Inteligência: <button onclick="addPoint('inteligencia')">+</button> <span id="inteligencia">0</span></div>
+        </div>
+        <button onclick="showLoginScreen()">Logout</button>
+    </div>
+
+    <div id="questsScreen">
+        <h2>Quests</h2>
+        <input type="text" id="newQuest" placeholder="Nova Quest">
+        <button onclick="addQuest()">Adicionar Quest</button>
+        <div id="questList"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

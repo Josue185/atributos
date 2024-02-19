@@ -1,0 +1,63 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0a0a0a;
+    color: #d3c6aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('dungeon_background.jpg');
+    background-size: cover;
+}
+
+.screen {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #d3c6aa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #d3c6aa;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+}
+
+.screen h2 {
+    color: #ffcc00;
+}
+
+input[type=text], input[type=password], input[type=email], button {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 24px);
+    background: #333;
+    border: 1px solid #d3c6aa;
+    border-radius: 5px;
+    color: #d3c6aa;
+}
+
+button {
+    background: #5c4a33;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    background: #483c29;
+}
+
+#abilities div, #questList div {
+    margin: 10px 0;
+}
+
+p {
+    cursor: pointer;
+    color: #d3c6aa;
+}
+
+p:hover {
+    color: #ffcc00;
+}
